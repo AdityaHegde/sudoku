@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "types": ["node"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": [
+      "dom", "es2020"
+    ],
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": false,
+
+    "baseUrl": ".",
+    "paths": {
+      "@generator/*": ["src/generator/*"],
+      "@solver/*": ["src/solver/*"],
+      "@util/*": ["src/util/*"],
+      "@grid/*": ["src/grid/*"],
+      "@ui/*": ["src/ui/*"],
+      "@server/*": ["src/server/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "scripts/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
